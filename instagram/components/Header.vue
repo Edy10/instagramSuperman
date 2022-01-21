@@ -18,7 +18,25 @@
 
 <script>
 export default {
-  name: "header.vue"
+  name: "header.vue",
+  data () {
+    return {
+      posts: []
+    }
+  },
+  async mounted(){
+    try {
+      this.posts = await this.buscaPosts();
+    }catch (error){
+      console.error(error);
+    }
+  },
+  methods:{
+    async buscaPosts(){
+      const  {data} = await this.$axios.get("posts")
+      return data;
+    }
+  }
 }
 </script>
 
