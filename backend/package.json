@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "uuid": "8.3.1"
+  },
+  "devDependencies": {
+    "json-server": "0.16.2"
+  },
+  "scripts": {
+    "start": "json-server --watch allPosts.json --port 3001"
+  }
+}
