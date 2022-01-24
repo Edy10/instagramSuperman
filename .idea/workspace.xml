@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba267e8c-2208-4853-9d44-b34fe320d257" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/instagram/components/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/instagram/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram/components/Timeline.vue" beforeDir="false" afterPath="$PROJECT_DIR$/instagram/components/Timeline.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/instagram/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/instagram/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/instagram/pages/index.vue" afterDir="false" />
-    </list>
+    <list default="true" id="ba267e8c-2208-4853-9d44-b34fe320d257" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +62,7 @@
       <updated>1642544698458</updated>
       <workItem from="1642544699538" duration="31503000" />
       <workItem from="1642982194052" duration="409000" />
-      <workItem from="1642982640165" duration="3043000" />
+      <workItem from="1642982640165" duration="3379000" />
     </task>
     <servers />
   </component>
