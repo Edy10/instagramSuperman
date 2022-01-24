@@ -6,7 +6,7 @@
           </div>
           <v-main>
               <v-container>
-                Hello World
+                  <Main/>
               </v-container>
           </v-main>
         <v-footer app>

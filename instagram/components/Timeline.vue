@@ -5,15 +5,15 @@
                 Visualizar timeline com:
                 <v-row justify="space-around" class="avatar-2">
                     <v-avatar size="50">
-                        <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" >
+                        <img src="../assets/img/batman.png" alt="John" >
                     </v-avatar>
                     <p>batman</p>
                     <v-avatar size="50">
-                        <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" >
+                        <img src="../assets/img/superman.png" alt="John" >
                     </v-avatar>
                     <p>superman</p>
                     <v-avatar size="50">
-                        <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John" >
+                        <img src="../assets/img/wonderWoman.png" alt="John" >
                     </v-avatar>
                     <p>wonderWoman</p>
                 </v-row>

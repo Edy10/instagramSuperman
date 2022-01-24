@@ -3,7 +3,7 @@
         <h2 class="text-subtitle-3"><b>Movinstagram</b></h2>
         <v-row class="avatar-perfil">
             <v-avatar size="100">
-                <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="John">
+                <img src="../assets/img/superman.png" alt="John">
             </v-avatar>
             <v-list-item-content class="text-des">
                 <v-list-item-title class="text-h6">superman</v-list-item-title>
@@ -19,24 +19,7 @@
 <script>
 export default {
   name: "header.vue",
-  data () {
-    return {
-      posts: []
-    }
-  },
-  async mounted(){
-    try {
-      this.posts = await this.buscaPosts();
-    }catch (error){
-      console.error(error);
-    }
-  },
-  methods:{
-    async buscaPosts(){
-      const  {data} = await this.$axios.get("posts")
-      return data;
-    }
-  }
+
 }
 </script>
 
