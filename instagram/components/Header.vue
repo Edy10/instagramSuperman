@@ -24,9 +24,12 @@ export default {
 </script>
 
 <style scoped>
+  .v-list-item__content {
+     overflow: unset!important;
+  }
   .container-header{
       padding-top: 20px;
-    padding-bottom: 20px;
+      padding-bottom: 20px;
   }
   .avatar-perfil{
     padding-top: 15px;
