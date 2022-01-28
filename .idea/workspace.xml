@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba267e8c-2208-4853-9d44-b34fe320d257" name="Changes" comment="" />
+    <list default="true" id="5b469528-bd6a-4fe0-aead-a6781610c615" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,21 +13,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-        <option value="Vue Single File Component" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/instagram/.editorconfig" previewFile="$PROJECT_DIR$/instagram/components/Main.vue" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="23tDsdUF5gMMrqBXuyBkbCRUWAE" />
+  <component name="ProjectId" id="249nPWJHh8pN4zl567eHunJWPC8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,41 +35,22 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MTHome" />
     <property name="vue.rearranger.settings.migration" value="true" />
-    <property name="vuejs.nuxt.types-notification-shown" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\edivaldosp\Desktop\superHerois\instagram\assets" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ba267e8c-2208-4853-9d44-b34fe320d257" name="Changes" comment="" />
-      <created>1642544698458</created>
+      <changelist id="5b469528-bd6a-4fe0-aead-a6781610c615" name="Changes" comment="" />
+      <created>1643051645723</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1642544698458</updated>
-      <workItem from="1642544699538" duration="31503000" />
-      <workItem from="1642982194052" duration="409000" />
-      <workItem from="1642982640165" duration="3379000" />
+      <updated>1643051645723</updated>
+      <workItem from="1643051646821" duration="82277000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

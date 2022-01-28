@@ -1,21 +1,17 @@
 <template>
     <div class="timeline text-center">
         <div class="card-1">
-            <div class="text-subtitle-2 text-center mb-15">
+            <div class="mb-15">
                 Visualizar timeline com:
                 <v-row justify="space-around" class="avatar-2">
-                    <v-avatar size="50">
-                        <img src="../assets/img/batman.png" alt="John" >
-                    </v-avatar>
-                    <p>batman</p>
-                    <v-avatar size="50">
-                        <img src="../assets/img/superman.png" alt="John" >
-                    </v-avatar>
-                    <p>superman</p>
-                    <v-avatar size="50">
-                        <img src="../assets/img/wonderWoman.png" alt="John" >
-                    </v-avatar>
-                    <p>wonderWoman</p>
+                    <span v-for="(friend, index) in bestFriends" :key="index">
+                        <p :class="friend === user ? 'active' : ''">
+                            <v-avatar size="50">
+                                <img :src="getImage(friend)" :alt="friend" >
+                            </v-avatar>
+                            {{ friend }}
+                        </p>
+                    </span>
                 </v-row>
             </div>
         </div>
@@ -24,7 +20,34 @@
 
 <script>
 export default {
-  name: "Timeline"
+    name: "Timeline",
+    data () {
+        return {
+            bestFriends: [],
+            user: 'superman',
+        }
+    },
+    async mounted(){
+        //Search all superman's best friend
+        try {
+            this.bestFriends = await this.searchBestFriend();
+            if(this.bestFriends.length)
+                this.bestFriends.push('superman');
+                this.$store.commit('setBestFriends', this.bestFriends);
+        }catch (error){
+            console.error(error);
+        }
+    },
+    methods:{
+        //Search best friend
+        async searchBestFriend(){
+            const {data} = await this.$axios.get("bestFriends")
+            return data;
+        }
+    },
+    computed:{
+
+    }
 }
 </script>
 
@@ -33,9 +56,9 @@ export default {
       margin-left: 10px!important;
   }
   .card-1{
-    max-height: 120px;
+    max-height: 130px;
     border: 1px solid!important;
-    border-radius: 5px;
+    border-radius: 2px;
     padding-top: 10px;
     padding-left: 60px;
     padding-right: 60px;
@@ -47,5 +70,9 @@ export default {
   }
   .avatar-2 p{
     padding: 15px;
+  }
+  .active {
+      background: #d3d3d32b;
+      border-radius: 5px;
   }
 </style>
