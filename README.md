@@ -13,6 +13,7 @@ Acessa a pasta "backend" - Arquivo allPosts.json – contém todos os dados nece
 ## Build
 
 ```bash
+# instalar dependência do backend
 $ npm
 
 # En seguinda digite:
@@ -22,7 +23,7 @@ $ npm start
 Isso vai gerar 4 URL's que deverão ser acessadas pelo front end.
 
 
-### `Front end`
+### `Frontnd`
 
 Icializar o front end acesse a pasta "instagram".
 
