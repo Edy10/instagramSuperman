@@ -4,7 +4,7 @@ Aplicação web front end que simula uma espécie de "Instagram de filmes" cujos
 
 ##Pré-requisitos
 
-### `Node.js`
+ `Node.js`
 
 ### `Backend`
 
