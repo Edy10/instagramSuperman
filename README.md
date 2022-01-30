@@ -17,6 +17,7 @@ Acessa a pasta "backend" - Arquivo allPosts.json – contém todos os dados nece
 $ npm
 
 En seguinda digite:
+
 $ npm start
 
 Isso vai gerar 4 URL's que deverão ser acessadas pelo front end.
