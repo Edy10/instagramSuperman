@@ -8,11 +8,12 @@ Aplicação web front end que simula uma espécie de "Instagram de filmes" cujos
 
 ### `Backend`
 
-##Instalar o back end
+## Instalar o back end
 
 Acessa a pasta "backend" - Arquivo allPosts.json – contém todos os dados necessários, que se subdividem em posts, comments, likes e bestFriends.
 
 ## Build Setup Back end
+
 $ npm
 
 En seguinda digite:
