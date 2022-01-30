@@ -14,11 +14,8 @@ Acessa a pasta "backend" - Arquivo allPosts.json – contém todos os dados nece
 
 ```bash
 $ npm
-```
 
-En seguinda digite:
-
-```bash
+# En seguinda digite:
 $ npm start
 ```
 
