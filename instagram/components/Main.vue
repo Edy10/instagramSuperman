@@ -16,10 +16,11 @@
                             <p class="user"><b>{{ item.user }}  </b> <span class="userDesc">{{ item.title }}</span></p>
                         </div>
                         <div class="v-list-item infoUser">
-                            <span @click="sendlike()" :key="item.id">
+                            <span @click="sendlike(item.id)">
                                 <v-tooltip bottom>
                                     <template v-slot:activator="{ on, attrs }">
-                                        <v-icon class="icon heart" v-bind="attrs" v-on="on">{{heart}}</v-icon>
+                                        <v-icon v-if="item.like === 0" class="icon heart" v-bind="attrs" v-on="on">mdi-heart-outline</v-icon>
+                                        <v-icon v-else class="icon heart" v-bind="attrs" v-on="on">mdi-heart</v-icon>
                                         {{item.qtdLikes}}
                                     </template>
                                     <span v-for="like in item.likes" :key="like.id">
@@ -63,8 +64,7 @@ export default {
             posts: [],
             comments: [],
             likes: [],
-            newComment: [],
-            heart: 'mdi-heart-outline'
+            newComment: []
         }
     },
     methods:{
@@ -83,6 +83,7 @@ export default {
             const {data} = await this.$axios.get("likes")
             return data;
         },
+        //Add new comments for array.
         sendMessage(id) {
             if(this.newComment[id].length > 1)
                 this.$store.getters.getPosts.forEach((post) => {
@@ -93,20 +94,30 @@ export default {
                             user: this.userActive,
                             postId: id
                         });
+                        post.qtdComments = post.qtdComments + 1;
                         this.$store.commit('setQtdComments', this.$store.getters.getQtdComments + 1);
                     }
                 });
                 this.$store.commit('setPosts', this.$store.getters.getPosts);
                 this.newComment[id] = '';
         },
-        sendlike(){
-            if(this.$store.getters.getLike == 0){
-                this.$store.commit('setLike', 1);
-                this.heart = 'mdi-heart';
-            }else {
-                this.$store.commit('setLike', 0);
-                this.heart = 'mdi-heart-outline';
-            }
+        //Add like to post
+        sendlike(id){
+            this.$store.getters.getPosts.forEach((post) => {
+                if(post.id === id && post.like === 0){
+                    post.like= 1;
+                    post.qtdLikes = post.qtdLikes + 1;
+                    post.likes.push({
+                        id: btoa(Math.random()),
+                        postId: id,
+                        user: this.userActive
+                    });
+                }else if(post.id === id ) {
+                    post.like = 0;
+                    post.qtdLikes = post.qtdLikes - 1;
+                }
+            });
+            this.$store.commit('setPosts', this.$store.getters.getPosts);
         }
     },
     async mounted(){
@@ -145,6 +156,7 @@ export default {
                 post.qtdComments = post.comments.length;
                 post.likes = [...this.$store.getters.getLikes.filter((like) => like.postId === post.id)];
                 post.qtdLikes = post.likes.length;
+                post.like = 0;
             });
             return this.posts;
         }

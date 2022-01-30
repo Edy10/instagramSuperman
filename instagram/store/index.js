@@ -5,8 +5,7 @@ export const state = () => ({
     bestFriends: [],
     qtdComments: 0,
     qtdLikes: 0,
-    qtdPosts: 0,
-    like: 0
+    qtdPosts: 0
 })
 
 export const getters = {
@@ -30,9 +29,6 @@ export const getters = {
     },
     getQtdPosts(state){
         return state.qtdPosts;
-    },
-    getLike(state){
-        return state.like;
     }
 }
 
@@ -57,8 +53,5 @@ export const mutations = {
     },
     setQtdPosts(state, value){
         state.qtdPosts = value;
-    },
-    setLike(state, value){
-        state.like = value;
     }
 }
