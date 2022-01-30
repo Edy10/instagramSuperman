@@ -8,26 +8,28 @@ Aplicação web front end que simula uma espécie de "Instagram de filmes" cujos
 
 ### `Backend`
 
-## Instalar o back end
-
 Acessa a pasta "backend" - Arquivo allPosts.json – contém todos os dados necessários, que se subdividem em posts, comments, likes e bestFriends.
 
-## Build Setup Back end
+## Build
 
+```bash
 $ npm
+```
 
 En seguinda digite:
 
+```bash
 $ npm start
+```
 
 Isso vai gerar 4 URL's que deverão ser acessadas pelo front end.
 
-# instagram
+
 ### `Front end`
 
 Icializar o front end acesse a pasta "instagram".
 
-## Build Setup Front end
+## Build
 
 ```bash
 # instalar dependência
