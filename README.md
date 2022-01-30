@@ -25,7 +25,7 @@ Isso vai gerar 4 URL's que deverão ser acessadas pelo front end.
 # instagram
 ### `Front end`
 
-Icializar o front end acesse a pasta "instagram" e executa os seguintes comandos.
+Icializar o front end acesse a pasta "instagram".
 
 ## Build Setup Front end
 
