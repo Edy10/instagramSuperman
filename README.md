@@ -2,7 +2,7 @@
 
 Aplicação web front end que simula uma espécie de "Instagram de filmes" cujos usuários são "super-heróis".
 
-##Pré-requisitos
+## Pré-requisitos
 
  `Node.js`
 
