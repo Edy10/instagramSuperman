@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b469528-bd6a-4fe0-aead-a6781610c615" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram/components/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/instagram/components/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/instagram/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/instagram/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643051645723</updated>
       <workItem from="1643051646821" duration="82277000" />
-      <workItem from="1643508573539" duration="4645000" />
+      <workItem from="1643508573539" duration="6236000" />
     </task>
     <servers />
   </component>

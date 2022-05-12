@@ -1,4 +1,4 @@
-# instagramSuperman
+# Instagram Superman
 
 Aplicação web front end que simula uma espécie de "Instagram de filmes" cujos usuários são "super-heróis".
 
@@ -35,4 +35,3 @@ $ npm install
 
 # Em seguida digite:
 $ npm run dev
-
